@@ -1,0 +1,244 @@
+/* Basic page style */
+body {
+    margin: 0;
+    color: #40514e;
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #fffdf7;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    color: #2b7a78;
+    font-family: "Pacifico", cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+h2 {
+    color: #ff8a5b;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2b7a78;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #2b7a78;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Opening hero section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 20px 0;
+    background: linear-gradient(#d7f7f5, #f7ffef);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text p {
+    color: #30736f;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.cloud {
+    position: absolute;
+    width: 150px;
+    opacity: 0.9;
+}
+
+.cloud-top {
+    top: 40px;
+    right: 18%;
+}
+
+.cloud-bottom {
+    left: 14%;
+    bottom: 170px;
+}
+
+.mountain {
+    display: block;
+    width: 620px;
+    margin: 40px auto 0;
+}
+
+/* Shared section spacing */
+.section {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.about p,
+.contact p {
+    max-width: 620px;
+    margin: 0 auto 25px;
+}
+
+.profile-image {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #fce38a;
+}
+
+/* Decorative divider */
+hr {
+    width: 80px;
+    border: 0;
+    border-top: 8px dotted #c6e9e6;
+    margin: 0 auto;
+}
+
+/* Skills layout uses Flexbox */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 35px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.skill-item img {
+    width: 190px;
+    height: 150px;
+    object-fit: cover;
+    border: 6px solid #fce38a;
+    border-radius: 18px;
+}
+
+.skill-item p {
+    margin-bottom: 0;
+}
+
+/* Contact button */
+.contact-button {
+    display: inline-block;
+    padding: 14px 28px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #ff8a5b;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #2b7a78;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+    padding: 35px 20px;
+    background-color: #2b7a78;
+}
+
+.footer nav {
+    margin-bottom: 16px;
+}
+
+.footer a {
+    margin: 0 14px;
+    color: #fce38a;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #eafffb;
+    font-size: 0.95rem;
+}
+
+/* Smaller screen layout */
+@media (max-width: 700px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        padding-top: 75px;
+    }
+
+    .cloud {
+        width: 105px;
+    }
+
+    .cloud-top {
+        right: 6%;
+    }
+
+    .cloud-bottom {
+        left: 5%;
+        bottom: 110px;
+    }
+
+    .mountain {
+        width: 95%;
+    }
+
+    .section {
+        width: 88%;
+        padding: 55px 0;
+    }
+
+    .skill-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill-item img {
+        width: 210px;
+        height: 160px;
+    }
+
+    .footer a {
+        display: inline-block;
+        margin: 6px 10px;
+    }
+}
